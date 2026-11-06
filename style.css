@@ -1,0 +1,340 @@
+
+:root {
+    --color-fondo: #0f172a;
+    --color-superficie: #1e293b;
+    --color-borde: #334155;
+    --color-texto: #e2e8f0;
+    --color-suave: #94a3b8;
+    --color-acento: #38bdf8;
+
+    --fuente-titulos: 'Space Grotesk', sans-serif;
+    --fuente-texto: 'Inter', sans-serif;
+    --fuente-codigo: 'JetBrains Mono', monospace;
+
+    --radio: 12px;
+    --ancho-max: 1100px;
+}
+
+/* 2. Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Scroll suave al dar clic en los links del menú */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 4. Base del body */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* 5. Títulos */
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    line-height: 1.2;
+}
+
+/* 6. Imágenes que nunca se salen de su caja */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 7. Links sin el azul y subrayado por defecto */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 8. Listas sin viñetas (solo en el menú) */
+nav ul {
+    list-style: none;
+}
+
+/* 9. Los formularios no heredan la fuente: hay que forzarlo */
+button, input, textarea {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+header{
+    background-color: var(--color-borde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: var(--color-suave);
+    margin: 20px 0;
+}
+
+.header-title{
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: var(--color-acento);
+}
+
+.header-title h3{
+    margin: 0;
+}
+
+.header-menu ul{
+    display: flex;
+    padding: 1.5rem;
+}
+
+.header-menu li{
+    color: var(--color-suave);
+    margin-right: 2rem;
+}
+
+.header-menu li:hover{
+    color: var(--color-acento);
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 1.5rem;
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+}
+
+.hero .info p, h1, h3{
+    margin-bottom: 1rem;
+}
+
+.clean-info{
+    color: var(--color-acento);
+}
+
+.info h1{
+    color: var(--color-texto);
+}
+
+.info h3{
+    color: var(--color-suave);
+}
+
+.sub-info{
+    color: var(--color-suave);
+}
+
+.But-1{
+    border-radius: 10px;
+    background-color: var(--color-acento);
+    color: black;
+    padding: 0.5rem 0.8rem;
+    margin-right: 10px;
+    border: none;
+}
+
+.But-2{
+    border: 1px solid var(--color-acento) ;
+    color: var(--color-acento);
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    padding: 0.5rem 0.8rem;
+}
+
+.logo{
+    background-color: var(--color-borde);
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 5px solid var(--color-acento);
+    transition: 0.3s;
+}
+
+.logo img{
+    width: 220px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.container{
+    padding: 4rem 1.5rem;
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+}
+
+.title-container{
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.proyectos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.proyecto{
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.proyecto-1{
+    grid-column: span 2;
+    border: 1px solid var(--color-acento);
+    border-radius: var(--radio);
+    background-color: var(--color-superficie);
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.proyectos-grid article:hover{
+    transform: translateY(-8px);
+}
+
+.proyectos-grid p{
+    color: var(--color-suave);
+}
+
+.tecnologias{
+    color: var(--color-acento);
+    font-size: 12px;
+}
+
+article img{
+    max-height:100px ;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.abilitys{
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.abilitys-title{
+    font-weight: 300;
+}
+
+.list-abilitys{
+    flex-wrap: wrap;
+}
+
+.ability{
+    margin-right: 10px;
+    margin-top: 1rem;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 20px;
+    padding: 0.2rem 0.8rem;
+}
+
+.ability-2{
+    margin-right: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-acento);
+    border-radius: 20px;
+    padding: 0.2rem 0.8rem;
+    color: var(--color-acento);
+}
+
+.contacto{
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.contacto h2{
+    font-weight: 300;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 1rem;
+}
+
+.formulario label{
+    color: var(--color-suave);
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo textarea, input{
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+}
+
+.campo-completo{
+    grid-column: 1 / -1;
+}
+
+.boton-lleno{
+    grid-column: 1 / -1;
+    justify-self: end;
+    background-color: var(--color-acento);
+    padding: 5px 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.Pie{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-borde);
+    padding: 1.5rem 2rem;
+    align-items: center;
+}
+
+.p-1{
+    font-size: 1rem;
+}
+
+.p-2{
+    margin-right: 2rem;
+}
+
+.p-2:hover{
+    color: var(--color-acento);
+}
+
+
+
+@media (max-width: 700px) {
+    .proyecto.destacado {
+        grid-column: span 1;
+    }
+}

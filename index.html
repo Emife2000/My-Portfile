@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h3 class="title">Emiliano</h3>
+        </div>
+        <nav class="header-menu">
+            <ul class="header-list">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#camp-abilitys">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="info">
+            <p class="clean-info">Hola, soy</p>
+            <h1>Emiliano</h1>
+            <h3>Desarrolador web en formacion</h3>
+            <p class="sub-info">Aprendo HTML, CSS y Ruby construyendo proyectos reales, un commit a la vez</p>
+            <button class="But-1"> <a href="#proyectos">Ver proyectos</a></button> <button class="But-2"><a href="#contact">Contacto</a></button>
+        </div>
+        <div class="logo">
+            <a href="https://github.com/Emife2000" target="_blank">
+                <img src="/img/logo-mio.jpg" alt="Este soy yo">
+            </a>
+        </div>
+    </section>
+    <hr class="line">
+    <section id="proyectos" class="container">
+        <h2 class="title-container">Proyectos</h2>
+        <div class="proyectos-grid">
+            <article class="proyecto-1">
+                    <img src="img/Cafeteria.png" alt="Pagina de cafeteria">
+                <h3>Café Aurora</h3>
+                <p>Landing page de una cafetería</p>
+                <span class="tecnologias">HTML • CSS</span>
+            </article>
+            <article class="proyecto">
+                    <img src="img/Lion-force-gym.png" alt="Pagina de gimnasio">
+                <h3>Lion Force Gym</h3>
+                <p>Landing page de un gimnasio.</p>
+                <span class="tecnologias">HTML • CSS • Flex</span>
+            </article>
+            <article class="proyecto">
+                    <img src="img/negro-fondo.jpg" alt="">
+                <h3>Calculadora.</h3>
+                <p>Pedidos en terminal(Próximamente).</p>
+                <span class="tecnologias">Ruby</span>
+            </article>
+            <article class="proyecto">
+                    <img src="img/Portfolio.png" alt="">
+                <h3>Portfolio</h3>
+                <p>Esta página.</p>
+                <span class="tecnologias">Grid • Flex</span>
+            </article>
+            <article class="proyecto">
+                    <img src="img/negro-fondo.jpg" alt="Fondo negro">
+                <h3>Próximamente</h3>
+                <p>En construcciónn</p>
+                <span class="tecnologias">???</span>
+            </article>
+        </div>
+    </section>
+    <hr>
+    <section class="abilitys" id="camp-abilitys">
+        <h2 class="abilitys-title">Habilidades</h2>
+        <div class="list-abilitys">
+            <button class="ability"><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">HTML</a></button>
+            <button class="ability"><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS</a></button>
+            <button class="ability"><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox" target="_blank">Flexbox</a></button>
+            <button class="ability"><a href="https://developer.mozilla.org/es/docs/Web/CSS/Guides/Grid_layout" target="_blank">Grid</a></button>
+            <button class="ability"><a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F" target="_blank">Git</a></button>
+            <button class="ability"><a href="https://docs.github.com/es/get-started/start-your-journey/what-is-github" target="_blank">GitHub</a></button>
+            <button class="ability"><a href="https://terminaldelinux.com/terminal/introduccion/que-es-terminal/" target="_blank">Terminal</a></button>
+            <button class="ability-2"><a href="https://www.godaddy.com/resources/latam/desarrollo/ruby-lenguaje-programacion" target="_blank">Ruby(aprendiendo)</a></button>
+        </div>
+    </section>
+    <hr>
+    <section class="contacto" id="contact">
+        <h2>Contacto</h2>
+        <form class="formulario">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="campo campo-completo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="boton boton-lleno campo-completo">Enviar</button>
+        </form>
+    </section>
+    <footer class="Pie">
+        <h5 class="p-1">
+            © 2026 Emiliano
+        </h5>
+        <div>
+            <span><a href="https://github.com/Emife2000" target="_blank" class="p-2">GitHub</a></span>
+        </div>
+    </footer>
+</body>
+</html>
