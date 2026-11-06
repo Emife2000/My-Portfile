@@ -337,4 +337,104 @@ article img{
     .proyecto.destacado {
         grid-column: span 1;
     }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-title{
+    padding: 1rem;
+}
+
+.header ul{
+    padding: 1rem;
+    align-items: center;
+}
+}
+
+@media (max-width: 550px) {
+    .logo{
+        display: flex;
+        max-width: 160px;
+        max-height: 160px;
+    }
+
+    .logo img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .info button{
+        flex-wrap:wrap;
+        margin-bottom: 1rem;
+    }
+
+    .formulario{
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 100%;
+    }
+
+    .proyectos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    }    
+
+    article p{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .header-menu li{
+    margin-right: 0.8rem;
+    font-size: 0.8rem;
+    }
+
+    .logo{
+        display: flex;
+        max-width: 130px;
+        max-height: 130px;
+    }
+
+    .logo img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .info p{
+        font-size: 0.8rem;
+    }
+
+    .info h1{
+        font-size: 1.8rem;
+    }
+
+    .proyectos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    }   
+    
+    article h3{
+        font-size: 0.7rem;
+    }
+
+    article p{
+        font-size: 0.5rem;
+    }
+
+    .p-1{
+        font-size: 0.8rem;
+    }
+
+    .p-2{
+        font-size: 0.8rem;
+    }
+
 }
