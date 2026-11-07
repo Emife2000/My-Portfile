@@ -243,7 +243,10 @@ article img{
 }
 
 .list-abilitys{
+    display: flex;
     flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0;
 }
 
 .ability{
@@ -391,6 +394,19 @@ article img{
 }
 
 @media (max-width: 450px) {
+    .But-1{
+    font-size: 14px;
+    padding: 11px;
+    }
+
+    .proyectos-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-1{
+    grid-column: span 1;
+    }
+
     .header-menu li{
     margin-right: 0.8rem;
     font-size: 0.8rem;
@@ -398,13 +414,13 @@ article img{
 
     .logo{
         display: flex;
-        max-width: 130px;
-        max-height: 130px;
+        max-width: 120px;
+        max-height: 120px;
     }
 
     .logo img{
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 110px;
+        max-height: 110px;
     }
 
     .info p{
@@ -417,7 +433,7 @@ article img{
 
     .proyectos-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit minmax, (100px, 1fr));
     gap: 1.5rem;
     }   
     
